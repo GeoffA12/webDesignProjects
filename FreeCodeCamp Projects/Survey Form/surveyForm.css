@@ -1,0 +1,271 @@
+#bgcolor {
+  background-color: #80FFE5;
+  font-family: Arial, Courier;
+}
+
+
+#title {
+  font-family: Arial, Courier;
+  text-align: center;
+  color: black;
+}
+
+#descriptionOut {
+  grid-area: header;
+  background: #F5F5F5;
+  text-align: center;
+}
+#description {
+  padding: 5px;
+}
+
+#name-label-out {
+  grid-area: nameLabel;
+  background: #F5F5F5;
+  text-align: right;
+  
+}
+#name-label {
+  position: relative;
+  margin: 15px;
+  top: 12px;
+  left: 2px;
+}
+
+#email-label-out {
+  grid-area: emailLabel;
+  background: #F5F5F5;
+  text-align: right;
+}
+
+#email-label {
+  position: relative;
+  margin: 15px;
+  top: 12px;
+  left: 2px;
+}
+
+#age-label-out {
+  grid-area: ageLabel;
+  background: #F5F5F5;
+  text-align: right;
+}
+#number-label {
+  position: relative;
+  margin: 15px;
+  top: 12px;
+  left: 2px;
+}
+#roleLabel {
+  grid-area: roleLabel;
+  background: #F5F5F5;
+  text-align: right; 
+  padding: 13px;
+  
+}
+#recommendLabel {
+  grid-area: recommendLabel;
+  background: #F5F5F5;
+  text-align: right;
+}
+#mostLikeLabel {
+  grid-area: mostLikeLabel;
+  background: #F5F5F5;
+  text-align: right;
+  padding: 13px;
+}
+#improvementLabel {
+  grid-area: improvementLabel;
+  background: #F5F5F5;
+  text-align: right;
+  
+}
+#commentsLabel {
+  grid-area: commentsLabel;
+  background: #F5F5F5;
+  text-align: right;
+  padding: 13px;
+}
+#submitButton {
+  grid-area: submitButton;
+  font-family: Arial;
+  background-color: #F5F5F5;
+  width: auto;
+}
+
+#submit {
+  grid-area: submitButton;
+  
+  justify-items: end;
+  width: 115px;
+  height: 50px;
+  margin-left: 510px;
+  background: rgb(66, 188, 244);
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.submitInput {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 100%;
+}
+
+#bgColsName {
+  grid-area: nameInput;
+  max-width: 100%;
+  height: auto;
+  
+  heigth: 400px;
+  background: #F5F5F5;  
+}
+
+#name {
+  grid-area: nameInput;
+  width: 300px;
+  height: 24px;
+}
+
+#bgColsEmail{
+  grid-area: emailInput;
+  heigth: 400px;
+  background: #F5F5F5; 
+}
+
+#email {
+  grid-area: emailInput;
+  width: 300px;
+  height: 24px;
+}
+
+#bgColsNumber{
+  grid-area: ageInput;
+  heigth: 400px;
+  background: #F5F5F5; 
+}
+
+#number {
+  grid-area: ageInput;
+  width: 300px;
+  height: 24px;
+}
+
+#bgColorSelect {
+  grid-area: roleSelect;
+  width: auto;
+  heigth: 400px;
+  background: #F5F5F5; 
+}
+
+#bgColorRadios {
+  grid-area: recommendRadio;
+  width: 565px;
+  heigth: 400px;
+  background: #F5F5F5;
+}
+
+#radios {
+  grid-area: recommendRadio;
+  padding: 2px;
+  line-height: 28px;
+  background: #F5F5F5;
+  font-size: 17.5px;
+}
+
+#commentBox {
+  grid-area: commentsBox;
+  margin-left: 7px;
+  margin-top: 5px;
+  padding-top: 7px;
+  
+}
+
+#commentBoxBg {
+  grid-area: commentsBox;
+  width: auto;
+  heigth: 400px;
+  background: #F5F5F5;
+}
+
+#dropdown {
+  grid-area: roleSelect;
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 200px;
+  height: 28px;
+}
+
+#bgColorMostLike {
+  grid-area: mostLikeSelect;
+  width:auto;
+  heigth: 400px;
+  background: #F5F5F5; 
+}
+
+#dropDownTwo {
+  grid-area: mostLikeSelect;
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 200px;
+  height: 28px;
+}
+#anCheck {
+  grid-area: an;
+  background-color: #80FFE5;
+  border: 1px solid black;
+}
+
+#bCheck {
+  grid-area: b;
+  background: #80FFE5;
+}
+
+#bgColorCheckLists {
+  grid-area: improvementCheck;
+  width:auto;
+  heigth: 800px;
+  background: #F5F5F5; 
+}
+#checkLists {
+  grid-area: improvementCheck;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  font-size: 17.5px;
+  line-height: 25px;
+}
+
+#survey-form {
+  display: grid;
+  background: #80FFE5;
+  height: 810px;
+  font-size: 18px;
+  min-height: 300px;
+  grid-template-areas:
+    "an header header b"
+    "an nameLabel nameInput b"
+    "an emailLabel emailInput b"
+    "an ageLabel ageInput b"
+    "an roleLabel roleSelect b"
+    "an recommendLabel recommendRadio b"
+    "an mostLikeLabel mostLikeSelect b"
+    "an improvementLabel improvementCheck b"
+    "an commentsLabel commentsBox b"
+    "an submitButton submitButton b";
+  
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-rows: 55px 1fr 1fr 1fr 1fr 2fr 1fr 5.5fr 2fr 1.5fr;
+}
+
+@media screen and (max-width: 950px) {
+  .submitInput {
+    width: 28%;
+   
+    border: 1px solid green;
+  }
+}
+
+  
+  
+

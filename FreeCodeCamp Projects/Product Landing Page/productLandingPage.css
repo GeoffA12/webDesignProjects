@@ -1,0 +1,470 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#bgColor {
+  background-color: rgb(212, 213, 221);
+  font-family: Calibri;
+}
+
+#myGrid {
+  display: grid;
+  min-height: 200px;
+  grid-template-rows: repeat(auto, minmax(150px, 1fr)); 
+}
+
+#nav-bar {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: auto;
+  top: 0;
+  background-color: rgb(169, 177, 188);
+  margin: auto;
+  z-index: 99999 !important;
+  
+}
+
+/*.unstack {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  margin: auto;
+  border: 1px solid red;
+}*/
+
+.nav-link {
+  color: black;
+  display: inline-block;
+  float: right;
+  padding: 15px 65px;
+  font-size: 19px;
+  text-decoration: none;
+  //border: 1px solid blue;
+}
+
+
+#header-img {
+  display: inline-block;
+  padding-top: 4px;
+  margin-top: 6px;
+  margin-left: 10px;
+  width: auto;
+  height: 42px;
+  //border: 2px solid orange;
+}
+
+#intro {
+  display: block;
+  margin: auto;
+  margin-top: 53px;
+  padding-top: 34px;
+  text-align: center;
+  //border: 1px solid green;
+  height: 175px;
+  width: auto;
+}
+
+
+
+#email {
+  display: block;
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  height: 25px;
+  font-size: 15.5px;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  background: rgb(226, 219, 11);
+  width: 145px;
+  height: 31px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+#containers {
+  height: auto;
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  flex-wrap: wrap;
+  
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  overflow: hidden;
+ 
+}
+
+.double-columns {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+
+.blue-column {
+  
+  height: 130px;
+  
+  width: 35%;
+  align-self: flex-end;
+}
+
+.pink-column {
+  height: 130px;
+  width: 76%;
+}
+
+
+
+#b1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end !important;
+  background-color: dodgerblue;
+  width: 72%;
+  height: 33%;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+
+.b1Header {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  padding-top: 26px;
+  padding-left: 0px;
+  font-size: 25.5px;
+  
+}
+
+.b1Para {
+  display: inline-block;
+  padding-left: 0px;
+  margin: auto;
+  width: 100%;
+  font-size: 17px;
+  text-align: justify;
+ 
+}
+
+#imgStyle {
+  width: 95px;
+  height: 85px;
+  padding-top: 30px;
+  margin: auto;
+  display: block;
+  margin-left: 10px;
+}
+
+#vidContainer {
+  height: 360px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.vidRow {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  width: auto;
+  flex: 1;
+  height: 90%;
+}
+
+#video  {
+  width: 650;
+  height: 300;
+  margin: auto;
+}
+
+#grid-container {
+  display: grid;
+  margin-top: 10px;
+  grid-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: .6fr 1fr 1fr 1fr .6fr;
+  border: 1px solid red;
+  width: auto;
+  margin: auto;
+}
+
+.box1 {
+ 
+  height: 315px;
+  
+}
+.box2 {
+  
+  width: auto;
+}
+
+.box3 {
+  
+  
+  width: auto;
+}
+
+.box4 {
+ 
+
+  width: auto;
+}
+
+.box5 {
+  
+}
+
+.flexItem {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid blue;
+  margin: auto;
+  width: auto;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+.flexHeader {
+  background-color: rgb(172, 180, 193);
+  border: 1px solid black;
+  height: 50px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+#flexContainer {
+  height: 320px;
+  margin: auto;
+ 
+}
+
+.flexRow {
+  display: flex;
+  
+  flex-wrap: wrap;
+ 
+  
+  max-width: 100%;
+}
+
+.flexCol {
+  flex: 33.3%;
+  padding: 5px;
+  
+  padding-left: 10px;
+}
+/* width should be auto at around 1200 for max width px.*/
+.t1 {
+  width: 335px;
+  margin-left: auto;
+  display: block;
+  border: 2px solid black;
+  height: 300px;
+}
+
+/*Re measure this width */
+.t2 {
+  width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 2px solid black;
+  height: 300px;
+}
+
+.t3 {
+  width: 335px;
+  margin-right: auto;
+  display: block;
+  border: 2px solid black;
+  height: 300px;
+}
+
+.boxHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgb(172, 180, 193);
+  height: 17%;
+}
+
+.boxPrice {
+  font-size: 29px;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 25%;
+  height: 40px;
+  
+}
+
+.boxText {
+  font-size: 17px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  width: 60%;
+  height: 120px;
+ 
+  line-height: 25px;
+  text-align: center;
+}
+
+.sButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 100px;
+  
+  margin-top: 10px;
+  
+}
+
+.subText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 19px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: rgb(226, 219, 11);
+}
+
+.footerBuild {
+  display: block;
+  background-color: rgb(192, 198, 206);
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 88px;
+  margin-top: 50px;
+}
+
+.footerText {
+  float: right;
+  text-align: right;
+  display: inline-block;
+  font-size: 18px;
+  color: black;
+  margin-top: 30px;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px;
+}
+
+.lStyle {
+  text-decoration: none;
+  padding: 4px;
+}
+
+
+@media screen and (max-width: 1050px) {
+  .nav-link {
+    display: inline-block;
+    white-space: no-wrap;
+    width: 125px;
+    font-size: 16px;
+    padding: 16px;
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-link {
+    display: block;
+    font-size: 14px;
+    padding: 15px;
+    margin: 0px 0px;
+    width: 90px;
+  }
+  #header-img {
+    display: inline-block;
+    padding-top: 4px;
+    margin-top: 6px;
+    margin-left: 5px;
+    width: 180px;
+    height: 25%;
+  }
+  #grid-container {
+    grid-template-columns: 700px;
+  }
+  .box2 {
+    margin: auto;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #imgStyle {
+    border: 1px solid red;
+    margin-left: -80px;
+   }
+}
+
+@media screen and (max-width: 850px) {
+  .b1Para {
+    font-size: 16.5px;
+  }
+  .b1Header {
+    font-size: 23px;
+  }
+  .flexRow {
+    flex-direction: column;
+  }
+  .flexContainer {
+    width: 400px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .flexContainer {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .t1 {
+    width: auto;
+  }
+  .t2 {
+    width: auto;
+  }
+  .t3 {
+    width: auto;
+  }
+}
+
+
+

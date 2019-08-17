@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 35px 20px 0px 325px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  padding-bottom: 23px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  
+}
+
+.double-columns {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.blue-column {
+  background: dodgerblue;
+  height: 400px;
+}
+
+#main-doc {
+  
+}
+
+.main-section {
+  padding-left: 10px;
+  display: inline;
+  overflow: visible;
+  font-size: 27px;
+  height: auto;
+ 
+}
+
+#Introduction {
+  
+}
+
+#What_you_should_already_know {
+  
+}
+
+#JavaScript_and_Java {
+  
+}
+
+#Hello_World {
+  
+}
+
+#Variables {
+ 
+}
+
+#Declaring_variables {
+  
+}
+
+#Variable_scope {
+  
+}
+
+#Global_variables {
+  
+}
+
+#Constants {
+  
+}
+
+#Data_Types {
+  
+}
+
+#if...else_statement {
+  
+}
+
+#while_statement {
+  
+}
+
+#Function_declarations {
+  
+}
+
+#Reference {
+  
+}
+#pVariables {
+  font-size: 15.5px;
+  
+  display: inline-block;
+  line-height: 22px;
+  margin-top: 17px;
+  margin-right: 2px;
+}
+
+#pIntro {
+  display: block;
+  line-height: 25px;
+  overflow: auto;
+  padding-left: 18px;
+  font-size: 15px;
+  margin-top: 14px;
+  margin-right: 2px;
+  margin-bottom: 10px;
+}
+
+code {
+  display: block;
+  margin-left: 30px;
+  padding-left: 19px;
+  padding-top: 17px;
+  margin-top: 10px;
+  padding-bottom: 17px;
+  line-height: 23px;
+  font-size: 14.5px;
+  background: rgb(197, 200, 204);
+}
+
+#pList {
+  ##border: 1px solid pink;
+  font-size: 15px;
+  margin-top: 10px;
+  display: block;
+  line-height: 25px;
+  padding-left: 65px;
+  padding-top: 4px;
+}
+
+#bgColor {
+  background-color: rgb(215, 226, 213);
+  font-family: Verdana, Arial
+}
+
+
+.stickbar {
+  position: fixed;
+  margin: -30px 0px;
+  left: 0;
+  width: 325px;
+  z-index: 1;
+  height: 120%;
+}
+
+#navbar {
+  background: rgb(215, 226, 213);;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: auto;
+  z-index: 2;
+  width: 300px;
+  padding-top: 20px;
+  overflow-x: hidden;
+  overflow: auto;
+  border-right: 3px solid black;
+}
+
+@media screen and (max-width: 750px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 2;
+    overflow: auto;
+    border-right: 3px solid black;
+    margin-bottom: 200px;
+  }
+  
+  .stickbar {
+    position: fixed;
+    margin: -30px 0px;
+    left: 0;
+    width: 5px;
+    background: dodgerblue;
+    z-index: 1;
+    height: auto;
+  }
+  
+  .wrapper {
+    margin: 200px 20px 0px 25px;
+    width: 95%;
+  }
+}
+
+.nav-title {
+  display: inline-block;
+  font-size: 25.5px;
+  padding-left: 21px;
+  font-weight: 500;
+  height: 50px;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding-top: 12px;
+  padding-left: 21px;
+  vertical-align: center;
+  font-size: 15px;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 45px;
+}
+
+
+
